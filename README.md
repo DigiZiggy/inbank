@@ -1,11 +1,23 @@
-# Minimal fullstack project using Java and React
+# Test project using Java and React (TypeScript) for InBank
 
-Hi! In this project I created a minimal setup for a react project with typescript.
+## What is it?
+
+A decision engine which takes in personal code, loan amount, loan period in
+months and returns a decision (negative or positive) and the amount.
+The idea of the decision engine is to determine what would be the maximum sum, regardless of
+the person requested loan amount. For example if a person applies for 4000 €, but we determine
+that we would approve a larger sum then the result should be the maximum sum which we
+would approve. Also in reverse, if a person applies for 4000 € and we would not approve it then
+we want to return the largest sum which we would approve. If a suitable loan
+amount is not found within the selected period, the decision engine should also try to find a new
+suitable period.
+
+Result: a single api endpoint and front-end application which uses the functionality.
 
 ## Technologies
 
 - React 19
-- Typescript 5
+- TypeScript 5
 - Webpack 5
 - Hot module replacement
 - Clean webpack plugin 4
