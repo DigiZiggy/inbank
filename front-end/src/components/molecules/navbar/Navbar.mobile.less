@@ -1,0 +1,32 @@
+@import "../../../styles/variables.less";
+
+.navbar {
+  padding: .5rem 1rem;
+  z-index: 100;
+
+  .container-fluid {
+    max-width: 1024px;
+  }
+
+  .navbar-brand .logo-main {
+    max-width: 120px;
+  }
+
+  .nav-item {
+    margin-right: 8px;
+    border-radius: 6.25rem;
+
+    .nav-link {
+      text-decoration: none;
+      color: @blue-900;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 12px 16px !important;
+      font-weight: 500;
+    }
+
+    &:hover {
+      background: #F0F0EA;
+    }
+  }
+}

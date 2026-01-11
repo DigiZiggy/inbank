@@ -1,0 +1,40 @@
+@import "../../../../src/styles/keyframes.less";
+@import "../../../styles/variables.less";
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  svg {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .loader-dots {
+    width: 80px;
+    color: @blue-900;
+    font-size: 64px;
+    line-height: 0;
+    display: flex;
+    justify-content: space-between;
+
+    span:nth-child(1) {
+      opacity: 0;
+      animation: fadeIn 500ms infinite;
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+      animation: fadeIn 500ms infinite;
+      animation-delay: 500ms;
+    }
+
+    span:nth-child(3) {
+      opacity: 0;
+      animation: fadeIn 500ms infinite;
+      animation-delay: 1000ms;
+    }
+  }
+}
